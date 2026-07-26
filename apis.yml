@@ -1,7 +1,23 @@
 aid: ecoplant
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ecoplant.png
 name: EcoPlant
-description: EcoPlant is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: EcoPlant provides an intelligent air compressor control and monitoring platform
+  for industrial facilities. The Ecoplant 360 solution uses IoT sensors, AI-powered dynamic
+  controls, and predictive analytics to optimize compressed-air systems in real time, preventing
+  downtime, improving reliability, and reducing compressed-air energy costs by up to 50 percent.
+  It installs in under a week with no installation fees and is compatible with most compressor
+  brands and existing plant technology.
 url: https://raw.githubusercontent.com/api-evangelist/ecoplant/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +27,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Industrial IoT
+- Compressed Air
+- Energy Efficiency
+- Predictive Analytics
+- Manufacturing
+- Sustainability
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +43,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/ecoplant-domain-security.yml
 - type: Website
-  url: https://ecoplant.co/
+  url: https://ecoplant.com/
+- type: Login
+  url: https://live.ecoplant.co/login
+- type: PrivacyPolicy
+  url: https://cdn.prod.website-files.com/61a7855f888fcb808709254f/638f54e17806493171904d0a_Ecoplant%20-%20Privacy%20Policy%20-%20Clean%20version%20December%206%2C%202022(12663247.10).docx
+- type: Blog
+  url: https://ecoplant.com/news
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
